@@ -18,6 +18,9 @@ import ted.gamename.level.Level;
 import ted.gamename.level.RandomLevel;
 
 public class MainGame extends Canvas implements Runnable{
+	
+	//Added Git Comment
+	
 	private static final long serialVersionUID = 1L;
 
 	//Resolution
