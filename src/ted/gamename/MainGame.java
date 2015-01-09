@@ -16,6 +16,7 @@ import ted.gamename.graphics.Screen;
 import ted.gamename.input.Keyboard;
 import ted.gamename.level.Level;
 import ted.gamename.level.RandomLevel;
+import ted.gamename.level.SpawnLevel;
 
 public class MainGame extends Canvas implements Runnable{
 	
@@ -51,10 +52,10 @@ public class MainGame extends Canvas implements Runnable{
 		
 		frame = new JFrame();
 		screen = new Screen(width, height);
-		level = new RandomLevel(64, 64);
+		level = new SpawnLevel("/textures/Level.png");
 		key = new Keyboard();
 		addKeyListener(key);
-		player = new Player(key);
+		player = new Player(8 * 16, 8 * 16, key);
 	}
 	
 	public synchronized void start(){

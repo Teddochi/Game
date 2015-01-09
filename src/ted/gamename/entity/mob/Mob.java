@@ -8,7 +8,7 @@ public class Mob extends Entity {
 	protected Sprite sprite;
 	
 	//1 = North, 2 = East, 3 = South, 4 = West
-	protected int dir = 0;
+	protected int dir = 2;
 	
 	protected boolean moving = false;
 	
